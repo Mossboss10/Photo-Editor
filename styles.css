@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', Arial, sans-serif;
+  background: #23272e;
+  color: #f3f3f3;
+  user-select: none;
+}
+
+.editor-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  background: linear-gradient(180deg, #262b33 0%, #191b1f 100%);
+  padding: 32px 24px;
+  width: 320px;
+  min-width: 240px;
+  box-shadow: 2px 0 16px #0005;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 1px solid #353a42;
+}
+
+.sidebar h1 {
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin: 0 0 24px 0;
+  letter-spacing: 1px;
+}
+
+.upload-label {
+  display: block;
+  background: #353a42;
+  border-radius: 8px;
+  padding: 14px 0;
+  width: 100%;
+  text-align: center;
+  cursor: pointer;
+  margin-bottom: 32px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s;
+  border: 2px solid transparent;
+}
+
+.upload-label:hover {
+  background: #434854;
+  border: 2px solid #3c7bf6;
+}
+
+.upload-label input[type="file"] {
+  display: none;
+}
+
+#controls {
+  width: 100%;
+}
+
+#controls h2 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: #8aa1c2;
+}
+
+.preset {
+  width: 100%;
+  background: #23272e;
+  color: #e1e7ef;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  padding: 10px 0;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 1px 4px #0002;
+  transition: background 0.15s, color 0.15s;
+}
+
+.preset:hover, .preset:focus {
+  background: #3c7bf6;
+  color: #fff;
+}
+
+.download-btn {
+  margin-top: auto;
+  width: 100%;
+  background: linear-gradient(90deg, #3c7bf6 0%, #5a46d6 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 16px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  box-shadow: 0 2px 8px #0003;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+
+.download-btn:hover {
+  background: linear-gradient(90deg, #2a5dcf 0%, #4531b6 100%);
+  box-shadow: 0 4px 16px #0004;
+}
+
+.canvas-area {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #23272e;
+}
+
+canvas {
+  max-width: 90vw;
+  max-height: 90vh;
+  background: #181b1f;
+  border-radius: 16px;
+  box-shadow: 0 4px 32px #0007, 0 0 0 6px #3c7bf630;
+  border: 2px solid #353a42;
+  transition: box-shadow 0.2s;
+}
